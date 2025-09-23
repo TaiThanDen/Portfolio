@@ -2,30 +2,35 @@ import Lanyard from "../components/immutable-components/Lanyard";
 import CardFont from "../assets/card/Cardfont1.png";
 import strapPng from "../assets/card/strapwithbackground1.jpg";
 import ScratchText from "../components/reusable-components/ScratchText";
-// import { BackgroundBeams } from "@/components/ui/shadcn-io/background-beams"
+import { FlickeringGrid } from "@/components/ui/shadcn-io/flickering-grid";
 
 export default function About() {
     return (
-        <div className="relative w-full min-h-screen">
-            {/* Lớp nền phủ kín */}
+        <div className="relative w-full min-h-screen overflow-hidden">
+            {/* Lớp nền tối phía sau */}
             <div className="absolute inset-0 bg-[#18181b] -z-10" />
-            <div className="container max-w-7xl mx-auto bg-[#18181b] py-6 px-2 md:py-10 md:px-0 relative z-10">
+            <FlickeringGrid
+                className="absolute inset-0 z-0"
+                color="#a78bfa"
+                maxOpacity={0.5}
+                squareSize={6}
+                gridGap={8}
+            />
+            <div className="container max-w-7xl mx-auto py-6 px-2 md:py-10 md:px-0 relative z-10">
                 <div
                     className="
-                    grid grid-cols-1 md:grid-cols-5 gap-6
+                    grid grid-cols-1 md:grid-cols-5 
                     rounded-3xl md:mx-6
                     border-2 border-purple-700
                     shadow-[0_0_40px_0_rgba(139,92,246,0.6)]
                     ring-2 ring-purple-500/40
-                    bg-[#18181c]/80
+                    bg-[#18181c]
                 "
                 >
                     {/* Content */}
                     <div className="md:col-span-3 p-4 md:pl-12 rounded-lg shadow">
                         <h3 className="font-bold pt-4 md:pt-6 text-2xl md:text-3xl ">
-                            <ScratchText mode="word" initiallyRevealed={true} revealMode="all" variant="title">
-                                About Me
-                            </ScratchText>
+                            About Me
                         </h3>
                         <div className="gap-4 pt-4">
                             <p className="leading-relaxed text-base md:text-lg">
@@ -37,7 +42,7 @@ export default function About() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
                             <div className="col-span-1">
                                 <h3 className="font-bold text-lg md:text-xl mb-2">
-                                    <ScratchText mode="word" revealMode="all" variant="title">Personal Information</ScratchText>
+                                    Personal Information
                                 </h3>
                                 <ul className="list-disc mb-5 gap-2 list-inside space-y-1 text-sm md:text-base">
                                     <li><ScratchText mode="word" revealMode="all" variant="content">Age: 18</ScratchText></li>
@@ -65,14 +70,14 @@ export default function About() {
                             <div className="col-span-1 ">
                                 <div className="flex mb-2 text-4xl">
                                     <p className="">
-                                        5
+                                        2
                                     </p>
                                     <span className=" text-purple-600 ">
                                         +
                                     </span>
                                 </div>
                                 <p className="leading-relaxed font-semibold ">
-                                    Project Finished
+                                    Months Of Experience
                                 </p>
                             </div>
                             <div className="col-span-1 ">
@@ -85,7 +90,7 @@ export default function About() {
                                     </span>
                                 </div>
                                 <p className="leading-relaxed font-semibold ">
-                                    Project Finished
+                                    GPA
                                 </p>
                             </div>
                         </div>
@@ -102,7 +107,6 @@ export default function About() {
                                 height={2.25}                  // mặc định 2.25
                                 mass={0.1}                     // giảm nếu muốn đỡ rung (vd 0.25)
                             />
-
                         </div>
                     </div>
                 </div>
