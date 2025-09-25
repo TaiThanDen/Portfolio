@@ -11,7 +11,7 @@ const FloatingSocialIcons = () => {
                 <div className="flex flex-col space-y-4 p-3 rounded-full bg-[#18181b]/95
                         shadow-lg ring-1 ring-white/10">
                     <a
-                        href="mailto:youremail@gmail.com"
+                        href="mailto:tai25062006z@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-red-500 transition-transform transform hover:scale-110"
@@ -19,7 +19,7 @@ const FloatingSocialIcons = () => {
                         <SiGmail className="w-8 h-8" />
                     </a>
                     <a
-                        href="https://github.com/yourprofile"
+                        href="https://github.com/TaiThanDen"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-white transition-transform transform hover:scale-110"

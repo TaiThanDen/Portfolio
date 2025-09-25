@@ -41,12 +41,7 @@ const Navbar = () => {
                 >
                     <div className="flex lg:flex-1">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            <img
-                                alt=""
-                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                                className="h-8 w-auto"
-                            />
+                            <a className="text-2xl font-bold ">Portfolio</a>
                         </a>
                     </div>
 
@@ -71,8 +66,11 @@ const Navbar = () => {
                         <Link to="/skills" className="text-sm/6 font-semibold text-white">
                             Skills
                         </Link>
-                        <Link to="/Projects" className="text-sm/6 font-semibold text-white">
+                        <Link to="/projects" className="text-sm/6 font-semibold text-white">
                             Projects
+                        </Link>
+                        <Link to="/contact" className="text-sm/6 font-semibold text-white">
+                            Contact
                         </Link>
                     </div>
                 </nav>
@@ -109,12 +107,15 @@ const Navbar = () => {
                                 <Link to="/about" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
                                     About Me
                                 </Link>
-                                <Link to="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
-                                    Marketplace
+                                <Link to="/skills" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                                    Skills
                                 </Link>
-                                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
-                                    Company
-                                </a>
+                                <Link to="/projects" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                                    Projects
+                                </Link>
+                                <Link to="/contact" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                                    Contact
+                                </Link>
                             </div>
                         </div>
                     </div>

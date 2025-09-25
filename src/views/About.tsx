@@ -2,20 +2,19 @@ import Lanyard from "../components/immutable-components/Lanyard";
 import CardFont from "../assets/card/Cardfont1.png";
 import strapPng from "../assets/card/strapwithbackground1.jpg";
 import ScratchText from "../components/reusable-components/ScratchText";
-import { FlickeringGrid } from "@/components/ui/shadcn-io/flickering-grid";
 
 export default function About() {
     return (
-        <div className="relative w-full min-h-screen overflow-hidden">
+        <div className="relative w-full pt-10 min-h-screen overflow-hidden">
             {/* Lớp nền tối phía sau */}
             <div className="absolute inset-0 bg-[#18181b] -z-10" />
-            <FlickeringGrid
+            {/* <FlickeringGrid
                 className="absolute inset-0 z-0"
                 color="#a78bfa"
                 maxOpacity={0.5}
                 squareSize={6}
                 gridGap={8}
-            />
+            /> */}
             <div className="container max-w-7xl mx-auto py-6 px-2 md:py-10 md:px-0 relative z-10">
                 <div
                     className="

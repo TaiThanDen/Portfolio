@@ -16,7 +16,7 @@ const HeroBanner: React.FC = () => {
                         playsInline
                     >
                         <source
-                            src="https://img.bgstatic.com/video/msg/herobanner-1732092714.mp4"
+                            src="https://img.bgstatic.com/video/msg/herobanner-1732092714.webm"
                             type="video/mp4"
                         />
                         Your browser does not support the video tag.
@@ -42,8 +42,8 @@ const HeroBanner: React.FC = () => {
                         </div>
 
                         {/* VercelCard */}
-                        <div className="col-span-1 flex lg:justify-end">
-                            <div className="w-full max-w-xs sm:max-w-sm">
+                        <div className="col-span-1 flex">
+                            <div className="w-full">
                                 <VercelCard />
                             </div>
                         </div>

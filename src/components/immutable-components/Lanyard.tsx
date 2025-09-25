@@ -42,7 +42,7 @@ export default function LanyardCanvas(props: LanyardProps) {
     return (
         <div className="relative  w-full h-[460px] md:h-[520px]">
             <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
-                <color attach="background" args={["#18181c"]} />
+                <color attach="background" args={["#18181b"]} />
                 <ambientLight intensity={0.9} />
                 <pointLight position={[4, 6, 6]} intensity={1.2} />
                 {/* Physics requires the Rapier WASM/runtime to be initialized. */}

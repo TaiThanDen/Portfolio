@@ -2,14 +2,14 @@ import CardContent from "@/components/reusable-components/CardContent";
 
 export default function Skills() {
     return (
-        <section className="w-full bg-[#18181b] py-6 min-h-screen">
+        <section className="w-full bg-[#18181b] py-6 min-h-screen pt-20">
             <div className="container max-w-7xl mx-auto px-4 md:px-8">
                 <h1 className="text-white font-bold text-3xl mb-4">Tools & Technologies</h1>
                 <h3 className="text-white text-xl mb-6">My Skills</h3>
-                <div className="flex flex-wrap gap-8 justify-start md:justify-start">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                     <CardContent>
                         <img
-                            src="http://localhost:5174/portofolio/assets/tools/reactjs.png"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/862px-React-icon.svg.png"
                             alt="icon"
                             className="w-12 h-12 rounded-lg object-contain"
                         />
@@ -31,9 +31,9 @@ export default function Skills() {
                     </CardContent>
                     <CardContent>
                         <img
-                            src="http://localhost:5174/portofolio/assets/tools/js.png"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
                             alt="icon"
-                            className="w-12 h-12 rounded-lg object-contain"
+                            className="w-12 h-12 object-contain"
                         />
                         <div>
                             <div className="text-white font-semibold text-lg">JavaScript</div>
@@ -42,9 +42,9 @@ export default function Skills() {
                     </CardContent>
                     <CardContent>
                         <img
-                            src="http://localhost:5174/portofolio/assets/tools/ts.png"
+                            src="https://cdn.worldvectorlogo.com/logos/typescript.svg"
                             alt="icon"
-                            className="w-12 h-12 rounded-lg object-contain"
+                            className="w-12 h-12  object-contain"
                         />
                         <div>
                             <div className="text-white font-semibold text-lg">TypeScript</div>
@@ -53,7 +53,7 @@ export default function Skills() {
                     </CardContent>
                     <CardContent>
                         <img
-                            src="http://localhost:5174/portofolio/assets/tools/vite.png"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1039px-Vitejs-logo.svg.png"
                             alt="icon"
                             className="w-12 h-12 rounded-lg object-contain"
                         />
@@ -64,7 +64,7 @@ export default function Skills() {
                     </CardContent>
                     <CardContent>
                         <img
-                            src="http://localhost:5174/portofolio/assets/tools/tailwind.png"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
                             alt="icon"
                             className="w-12 h-12 rounded-lg object-contain"
                         />
@@ -75,9 +75,9 @@ export default function Skills() {
                     </CardContent>
                     <CardContent>
                         <img
-                            src="http://localhost:5174/portofolio/assets/tools/html.png"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
                             alt="icon"
-                            className="w-12 h-12 rounded-lg object-contain"
+                            className="w-12 h-12 object-contain"
                         />
                         <div>
                             <div className="text-white font-semibold text-lg">HTML</div>
@@ -86,7 +86,7 @@ export default function Skills() {
                     </CardContent>
                     <CardContent>
                         <img
-                            src="http://localhost:5174/portofolio/assets/tools/css.png"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
                             alt="icon"
                             className="w-12 h-12 rounded-lg object-contain"
                         />
@@ -174,7 +174,7 @@ export default function Skills() {
                     </CardContent>
                     <CardContent>
                         <img
-                            src="http://localhost:5174/portofolio/assets/tools/github.png"
+                            src="https://images.icon-icons.com/3685/PNG/512/github_logo_icon_229278.png"
                             alt="icon"
                             className="w-12 h-12 rounded-lg object-contain"
                         />

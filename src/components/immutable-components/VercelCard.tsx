@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
 import cardImg from "../../assets/herobanner/christmas-removebg-preview.png";
-import cardImgmini from "../../assets/herobanner/christmas-removebg-preview - short.png";
-
+import cafe from "../../assets/herobanner/aecafe_1_1_-removebg-preview.png";
 const VercelCard = () => {
     const cardRef = useRef<HTMLDivElement>(null);
 
@@ -20,7 +19,7 @@ const VercelCard = () => {
     return (
         <div
             ref={cardRef}
-            className="group relative w-96 h-[520px] rounded-2xl overflow-hidden shadow-2xl cursor-pointer"
+            className="group w-full sm:w-[300px] md:w-[350px] lg:w-[400px] mx-auto relative w-96 h-[520px] rounded-2xl overflow-hidden shadow-2xl cursor-pointer"
         >
             {/* Holographic animated background */}
             <div className="absolute inset-0 bg-[conic-gradient(from_0deg,#ff00cc,#3333ff,#00ffcc,#ffcc00,#ff3300,#ff00cc)] animate-spin-slow blur-2xl opacity-60 pointer-events-none" />
@@ -47,7 +46,7 @@ const VercelCard = () => {
                 <div className="w-full grid grid-cols-6 bg-white/20 rounded-lg relative px-4 py-2 items-center mt-auto">
                     {/* Avatar */}
                     <img
-                        src={cardImgmini}
+                        src={cafe}
                         alt="avatar"
                         className="w-10 h-10 object-cover rounded-full col-span-1 "
                     />
