@@ -1,7 +1,5 @@
-import Lanyard from "../components/immutable-components/Lanyard";
-import CardFont from "../assets/card/Cardfont1.png";
-import strapPng from "../assets/card/strapwithbackground1.jpg";
 import ScratchText from "../components/reusable-components/ScratchText";
+import Spline from '@splinetool/react-spline';
 
 export default function About() {
     return (
@@ -34,7 +32,7 @@ export default function About() {
                         <div className="gap-4 pt-4">
                             <p className="leading-relaxed text-base md:text-lg">
                                 <ScratchText mode="sentence" revealMode="progressive" variant="content">
-                                    Hello! I'm Phạm Tấn Tài, a passionate web developer with a knack for creating dynamic and user-friendly web applications. With a strong foundation in both front-end and back-end technologies, I enjoy bringing ideas to life through code. When I'm not coding, you can find me exploring the latest tech trends or contributing to open-source projects. Let's connect and build something amazing together!
+                                    As an FPT College student, although I have just graduated, I already built and delivered real websites for clients. These projects not only helped me gain practical experience but also improved my ability to understand client needs and turn ideas into functional solutions. I am confident that this early exposure gives me a strong foundation to grow further in the field of web development.
                                 </ScratchText>
                             </p>
                         </div>
@@ -44,7 +42,7 @@ export default function About() {
                                     Personal Information
                                 </h3>
                                 <ul className="list-disc mb-5 gap-2 list-inside space-y-1 text-sm md:text-base">
-                                    <li><ScratchText mode="word" revealMode="all" variant="content">Age: 18</ScratchText></li>
+                                    <li><ScratchText mode="word" revealMode="all" variant="content">Age: 19</ScratchText></li>
                                     <li><ScratchText mode="word" revealMode="all" variant="content">Phone: 0961967006</ScratchText></li>
                                     <li><ScratchText mode="word" revealMode="all" variant="content">Occupation: Web Developer</ScratchText></li>
                                     <li><ScratchText mode="word" revealMode="all" variant="content">Email: tai25062006z@gmail.com</ScratchText></li>
@@ -98,14 +96,15 @@ export default function About() {
                     <div className="md:col-span-2 p-4 border-t md:border-t-0 md:border-l border-purple-900 ">
                         <div className=" col-span-1 h-full w-full">
                             {/* <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c1dfa8fd-9987-4fc4-9de3-2c99666da297-profile_image-300x300.png" alt="Avatar" className="rounded-lg shadow" /> */}
-                            <Lanyard
+                            {/* <Lanyard
                                 cardImage={CardFont}            // bắt buộc
                                 strapImage={strapPng}        // tùy chọn
                                 // hookImage={hook}            // tùy chọn
                                 width={1.6}                    // mặc định 1.6
                                 height={2.25}                  // mặc định 2.25
                                 mass={0.1}                     // giảm nếu muốn đỡ rung (vd 0.25)
-                            />
+                            /> */}
+                            <Spline scene="https://prod.spline.design/0JVnLC2NnGSjgZts/scene.splinecode" />
                         </div>
                     </div>
                 </div>

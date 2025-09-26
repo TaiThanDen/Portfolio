@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
     Dialog,
     DialogPanel,
@@ -11,38 +11,19 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
-
-    // Toggle nền khi cuộn
-    useEffect(() => {
-        const onScroll = () => setScrolled(window.scrollY > 8);
-        onScroll();
-        window.addEventListener("scroll", onScroll, { passive: true });
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
 
     return (
         <>
-            {/* Navbar fixed + trong suốt */}
-            <header
-                className={[
-                    "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-                    scrolled
-                        ? " backdrop-blur supports-backdrop-blur:border-b border-white/10 shadow-sm"
-                        : "bg-transparent"
-                ].join(" ")}
-            >
+            {/* Navbar static + trong suốt */}
+            <header className="absolute inset-x-0 top-0 z-50 bg-transparent">
                 <nav
                     aria-label="Global"
-                    className={[
-                        "mx-auto flex max-w-7xl items-center justify-between lg:px-8",
-                        scrolled ? "p-4" : "p-6"
-                    ].join(" ")}
+                    className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
                 >
                     <div className="flex lg:flex-1">
-                        <a href="#" className="-m-1.5 p-1.5">
-                            <a className="text-2xl font-bold ">Portfolio</a>
-                        </a>
+                        <Link to="#" className="-m-1.5 p-1.5">
+                            <span className="text-2xl font-bold text-white">Portfolio</span>
+                        </Link>
                     </div>
 
                     <div className="flex lg:hidden">
@@ -57,19 +38,19 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden lg:flex lg:gap-x-12">
-                        <Link to="/" className="text-sm/6 font-semibold text-white">
+                        <Link to="/" className="text-sm/6 font-semibold text-white hover:text-gray-300 transition-colors">
                             Home
                         </Link>
-                        <Link to="/about" className="text-sm/6 font-semibold text-white">
+                        <Link to="/about" className="text-sm/6 font-semibold text-white hover:text-gray-300 transition-colors">
                             About Me
                         </Link>
-                        <Link to="/skills" className="text-sm/6 font-semibold text-white">
+                        <Link to="/skills" className="text-sm/6 font-semibold text-white hover:text-gray-300 transition-colors">
                             Skills
                         </Link>
-                        <Link to="/projects" className="text-sm/6 font-semibold text-white">
+                        <Link to="/projects" className="text-sm/6 font-semibold text-white hover:text-gray-300 transition-colors">
                             Projects
                         </Link>
-                        <Link to="/contact" className="text-sm/6 font-semibold text-white">
+                        <Link to="/contact" className="text-sm/6 font-semibold text-white hover:text-gray-300 transition-colors">
                             Contact
                         </Link>
                     </div>

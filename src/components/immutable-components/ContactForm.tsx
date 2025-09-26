@@ -71,10 +71,10 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="relative min-h-screen pt-40 bg-[#18181b] text-white overflow-hidden">
+    <div className="relative min-h-screen pt-40 bg-[#18181b] text-white overflow-hidden px-4 sm:px-4 lg:px-0">
       {/* Background Beams */}
       <BackgroundBeams className="absolute inset-0 z-0" />
-      <div className="flex items-center justify-center grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto gap-10 relative z-10">
+      <div className=" items-center mb-10 justify-center grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto gap-10 relative z-10">
         {/* Left Side - Contact Info */}
         <div className="grid col-span-1">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">

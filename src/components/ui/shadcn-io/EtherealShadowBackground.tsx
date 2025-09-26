@@ -175,3 +175,4 @@ export function EtheralShadow({
         </div>
     );
 }
+export default EtheralShadow;
